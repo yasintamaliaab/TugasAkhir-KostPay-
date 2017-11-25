@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="655.0" prefWidth="0.0" style="-fx-background-color: #054c63;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kostpay.FXMLHomeAdminController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="97.0" prefWidth="731.0" style="-fx-background-color: #154696;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="60.0" layoutX="274.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gingerbread-house.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="214.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@money.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="349.0" layoutY="18.0" text="Kost Pay" textFill="WHITE">
+               <font>
+                  <Font name="Khmer UI Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="63.0" text="Rajin Bayar Kos yaa nak" textFill="#ccfffd">
+               <font>
+                  <Font name="KaiTi" size="15.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="299.0" layoutY="109.0" text="Admin Only" textFill="WHITE">
+         <font>
+            <Font name="Iskoola Pota" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="282.0" layoutY="139.0" prefHeight="2.0" prefWidth="155.0" />
+      <Label layoutX="270.0" layoutY="160.0" text="Input Kode Verifikasi" textFill="WHITE">
+         <font>
+            <Font name="Latha" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="code" layoutX="237.0" layoutY="206.0" maxWidth="237.0" minWidth="222.0" prefHeight="33.0" prefWidth="254.0" promptText="Code Verification" style="-fx-background-color: white;" unFocusColor="#312580">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btadd" layoutX="312.0" layoutY="269.0" onAction="#add" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #9bc1ff;" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tabeladmin" layoutX="145.0" layoutY="318.0" prefHeight="315.0" prefWidth="430.0">
+        <columns>
+          <TableColumn fx:id="nama_user" prefWidth="95.0" text="nama_user" />
+            <TableColumn fx:id="bulan" prefWidth="124.0" text="Pembayaran Bulan" />
+            <TableColumn fx:id="code_" prefWidth="93.0" text="Verification" />
+            <TableColumn fx:id="bayar" prefWidth="117.0" text="Bayar" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

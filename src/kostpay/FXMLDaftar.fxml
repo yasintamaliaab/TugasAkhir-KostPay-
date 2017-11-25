@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="523.0" style="-fx-background-color: #054c63;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kostpay.FXMLDaftarController">
+   <children>
+      <Pane prefHeight="94.0" prefWidth="523.0" style="-fx-background-color: #154696;" />
+      <ImageView fitHeight="71.0" fitWidth="60.0" layoutX="159.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gingerbread-house.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="99.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@money.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="15.0" text="Kost Pay" textFill="WHITE">
+         <font>
+            <Font name="Khmer UI Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="60.0" text="Rajin Bayar Kos yaa nak" textFill="#ccfffd">
+         <font>
+            <Font name="KaiTi" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="235.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@circular-upload-sign.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="157.0" prefHeight="25.0" prefWidth="75.0" text="Sign Up" textFill="#e8e8e8">
+         <font>
+            <Font name="Lucida Sans Regular" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nama" layoutX="145.0" layoutY="191.0" maxWidth="237.0" minWidth="222.0" prefHeight="33.0" prefWidth="254.0" promptText="Nama" style="-fx-background-color: white;" unFocusColor="#312580">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="asal" layoutX="144.0" layoutY="241.0" maxWidth="237.0" minWidth="222.0" prefHeight="33.0" prefWidth="254.0" promptText="Asal" style="-fx-background-color: white;" unFocusColor="#312580">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="InUserS" layoutX="143.0" layoutY="356.0" maxWidth="237.0" minWidth="222.0" prefHeight="33.0" prefWidth="254.0" promptText="Username" style="-fx-background-color: white;" unFocusColor="#312580">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="InPassS" layoutX="143.0" layoutY="408.0" maxWidth="237.0" minWidth="224.0" prefHeight="37.0" prefWidth="237.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="#23298d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btdaftar" layoutX="215.0" layoutY="467.0" onAction="#daftar" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #9bc1ff;" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="145.0" layoutY="289.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdlaki" layoutX="148.0" layoutY="318.0" mnemonicParsing="false" text="Laki-laki" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdperempuan" layoutX="279.0" layoutY="318.0" mnemonicParsing="false" text="Perempuan" textFill="WHITE" toggleGroup="$gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
